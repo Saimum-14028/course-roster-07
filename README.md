@@ -1,6 +1,6 @@
 # My Course Roster
 
-### Project features
+### Project Features
 
 - Display a list of available courses with details such as course title, description.
 - Allow users to select courses.
