@@ -6,12 +6,11 @@ import Cart from "../Cart/Cart";
 import { useState } from "react";
 
 const Home = () => {
+  const creditLimit = 20;
   const [allCourses, setAllCourses] = useState([]);
   const [selectedCourses, setSelectedCourses] = useState([]);
-  const [remaining, setRemaining] = useState(20);
+  const [remaining, setRemaining] = useState(creditLimit);
   const [totalCredit, setTotalCredit] = useState(0);
-
-  const creditLimit = 20;
 
   useEffect(() => {
     fetch("./data.json")
